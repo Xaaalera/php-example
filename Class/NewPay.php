@@ -31,7 +31,6 @@ class NewPay
     public function calc_sign($fields) //sign  need to generate form   Pay
     {
         ksort($fields);
-        print_r($fields);
         $secret_t = '';
         foreach ($fields as $key => $val) {
             $secret_t = $secret_t . '-' . $val;
